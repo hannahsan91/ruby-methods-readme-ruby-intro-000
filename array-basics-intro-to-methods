@@ -1,0 +1,47 @@
+puts "Hello World"
+Hello World
+=> nil
+irb(main):002:0> puts phrase
+Traceback (most recent call last):
+        4: from /usr/local/opt/ruby/bin/irb:23:in `<main>'
+        3: from /usr/local/opt/ruby/bin/irb:23:in `load'
+        2: from /usr/local/Cellar/ruby/2.7.1_2/lib/ruby/gems/2.7.0/gems/irb-1.2.3/exe/irb:11:in `<top (required)>'
+        1: from (irb):2
+NameError (undefined local variable or method `phrase' for main:Object)
+irb(main):003:0> phrase= "Hello World"
+irb(main):004:0> puts phrase
+Hello World
+=> nil
+irb(main):005:1* def say_hello_ten_times
+irb(main):006:1*   phrase = "Hello World"
+irb(main):007:1*   puts phrase
+irb(main):008:1*   puts phrase
+irb(main):009:1*   puts phrase
+irb(main):010:1*   puts phrase
+irb(main):011:1*   puts phrase
+irb(main):012:1*   puts phrase
+irb(main):013:1*   puts phrase
+irb(main):014:1*   puts phrase
+irb(main):015:1*   puts phrase
+irb(main):016:1*   puts phrase
+irb(main):017:0> end
+=> :say_hello_ten_times
+irb(main):018:0> say_hello_ten_times
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+=> nil
+irb(main):019:1* def a_sample_method
+irb(main):020:1*   puts "I am the method body"
+irb(main):021:0> end
+=> :a_sample_method
+irb(main):022:0> a_sample_method
+I am the method body
+=> nil
